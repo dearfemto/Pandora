@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index2style.css">
+    <title>Inside</title>
+    <script>
+        function toggleSubSlides(slideId) {
+            const subSlides = document.querySelectorAll(`.sub-slide-${slideId}`);
+            subSlides.forEach(subSlide => {
+                subSlide.style.display = subSlide.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+
+        function toggleAudio() {
+            const audio = document.getElementById("myAudio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        function setVolume(value) {
+            const audio = document.getElementById("myAudio");
+            audio.volume = value;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Pandora</h1>
+    <p>The mind is everything.</p>
+    <p>He who controls his mind will find the truth.</p>
+    
+    <div id="slides">
+        <div class="slide" onclick="toggleSubSlides(0)">They don't teach you this at school</div>
+        <div class="sub-slide sub-slide-0">
+            <div class="image-container">
+                <img src="Image/Image 1.png" alt="Sub-Slide 1.1">
+                <div class="image-text">BE THE BEST</div>
+            </div>
+            <div><strong>BE THE BEST</strong><p>“Wherever you are, always be the best in your field, no one can beat you except when you stop stepping”.</p></div>
+            <div class="image-container">
+                <img src="Image/Image_2-removebg-preview.png" alt="Sub-Slide 1.2">
+                <div class="image-text">ALWAYS THINK DIFFERENTLY</div>
+            </div>
+            <div><strong>ALWAYS THINK DIFFERENTLY</strong><p>“Think differently, you will see many paths, the more paths the more opportunities and not everyone sees what you see”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_man_eksperimenting_reality_0.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">EXPERIMENT</div>
+            </div>
+            <div><strong>EXPERIMENT</strong><p>“Don't always comply with the system in a region be different and experience the phenomenon”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_chill_man_siting_on_a_chair_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">SOBRIETY IS KEY</div>
+            </div>
+            <div><strong>SOBRIETY IS KEY</strong><p>“Try to stay calm in all bad situations, when you are calm you can see the world more broadly”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_man_thinking_0.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">THINK BEFORE YOU ACT</div>
+            </div>
+            <div><strong>THINK BEFORE YOU ACT</strong><p>“You are a dynamic thinking being who thinks before you do, before you walk, and before you speak”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_and_he_is_standing_there_unfazed_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">STANDING FULL OF CONFIDENCE</div>
+            </div>
+            <div><strong>STANDING FULL OF CONFIDENCE</strong><p>“Corruption will always hit every living person so stand firm with confidence and don't let a little thorn affect you. Imagine when you shoot someone and he stands there unfazed”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_Enter_a_world_of_illusions_where_reality_an_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">ILLUSION</div>
+            </div>
+            <div><strong>ILLUSION</strong><p>“Never say never, because limits, like fears, are often just an illusions”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Lightning_XL_A_lone_figure_standing_on_the_edge_of_a_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">NOW OR NEVER</div>
+            </div>
+            <div><strong>NOW OR NEVER</strong><p>“Everyone has a dream, a desire, a passion to achieve their goals, the question is when will you start?”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_A_vibrant_depiction_of_the_cycle_of_life_an_0.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">LIFE AND DEATH</div>
+            </div>
+            <div><strong>LIFE AND DEATH</strong><p>“Stop thinking that life is only once. We have the opportunity to live every day, but death only comes once. Never put off anything you want to do, imagine how many ideas are buried and don't become reality because they procrastinate”.</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Lightning_XL_A_majestic_statue_of_victory_stands_tall_0-removebg-preview.png" alt="Sub-Slide 1.3">
+                <div class="image-text">VICTORY</div>
+            </div>
+            <div><strong>VICTORY</strong><p>“The world doesn't always go our way. We are not the main characters in this world and may not even be anyone in this world. However, in life, as in warfare, it is not those who attack more who will win, but those who are able to endure to the end. While this is not about warfare, it is still important to remember that resilience is key. It's about how much you endure after taking so many hits".</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Lightning_XL_A_unique_and_diverse_prompt_that_showcas_0-removebg-preview.png" alt="Sub-Slide 1.3">
+                <div class="image-text">EXPRESS TRUST</div>
+            </div>
+            <div><strong>EXPRESS TRUST</strong><p>"If you can see it in your mind and you have enough courage to speak about it, it will happen. A lot of people believe in certain thoughts but they keep them to themselves, they don't put them out there. You really believe it if you become vocal with it, you create that law of attraction and it will come true". </p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Vision_XL_A_lone_soldier_stands_tall_his_armor_gleami_0.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">GOLDEN SAND</div>
+            </div>
+            <div><strong>GOLDEN SAND</strong><p>“You see a lot of unspeakable beauty on this earth, while humans are like sand spread all over the world. If you don't see any beauty around you, be that beauty yourself, be one of them".</p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Diffusion_XL_A_human_being_with_a_wild_imagination_su_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">IMAGINATION</div>
+            </div>
+            <div><strong>IMAGINATION</strong><p>“What you think, you become, what you feel, you attract, and what you imagine, you create". </p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Diffusion_XL_A_treasure_map_leads_you_to_a_hidden_cav_0.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">LUCK</div>
+            </div>
+            <div><strong>LUCK</strong><p>“When preparation meets opportunities, it's a luck". </p></div>
+            <div class="image-container">
+                <img src="Image/Leonardo_Diffusion_XL_A_human_being_with_a_wild_imagination_su_1.jpg" alt="Sub-Slide 1.3">
+                <div class="image-text">TAKE A RISK</div>
+            </div>
+            <div><strong>TAKE A RISK</strong><p>“In order to achieve dreams, wealth and glory, it takes people who are willing to take risks". </p></div>
+            <!-- Continue adding images and text for other subslides -->
+        </div>
+
+        <div class="slide" onclick="toggleSubSlides(1)">Unlock your potential with my thoughts</div>
+        <div class="sub-slide sub-slide-1">
+            <div class="image-container"></div>
+            <div><strong style="color: crimson;">1. Knowing your purpose</strong>
+            <p>Everyone has a purpose in life, some people don't, and some people don't even know what that purpose is. There is three type of people:</p>
+                <ol><li>Those who believe in God know that the purpose of life is to worship God.</li>
+                    <li>Those who believe in God but do not fulfill their obligations also know that the purpose of life is to worship God.</li>
+                    <li>Those who do not have faith in God do not believe in the purpose of life.</li>
+                </ol>
+            <p>These three types of people will always exist: from before you are born, while you are alive, and after you die. We live to worship God, but don't think the road will always be smooth when you cross it, because there will always be those who block your path. Everyone has their own way, their own dreams, and their own goals while on this earth. But remember, when you think about what your dreams are for the future, always consider what God likes and stay away from things that God doesn't like or forbids. Then you will get what you deserve when you die.</p>
+            </div>
+            <div><strong style="color: crimson;">2. Patient is priority</strong>
+                <p>Open your eyes wide, embrace clarity, and maintain your calm. This is the pathway to the success you seek. When serenity replaces panic, everything will fall into place. Your mind will find peace, and your body will thrive in calmness.</p>
+            </div>
+            <div><strong style="color: crimson;">3. Always ask "WHY"</strong>
+                <p>Why is this happening? Why am I here? Why am i doing this? Always seek the answers to these questions, for in your relentless pursuit, you will uncover the clues that guide you toward your true desires.</p></div>
+            <div><strong style="color: crimson;">4. You born to win</strong>
+                <p>The world ain't a sunshine and rainbows it's a very mean and nasty place, you me or nobody is gonna hit as hard as life but it ain't about how hard you hit it's about how hard you can get hit and keep moving forward, that's how winning is done. People say it's okay if you're stupid, it's okay if you're poor, it's okay if you're lazy, it's okay if you're timid, it's okay if you are blabla. The answer is NO, you should be the best, you should be smart, you should be a man, you should be number one, you should be rich, you should have whatever you want, you have to want everything.</p></div>
+                <p>Wherever you are, always be the best in your field, no one can beat you except when you stop stepping. Be a Winner.</p>
+                <p>How could you not win if you really want it that bad.</p>
+            <div><strong style="color: crimson;">5. Failure isn't real</strong>
+                <p>Mailure is a natural thing that happens and is experienced by everyone. Though I may not know you personally, I firmly believe that in my perspective, failure is not an option. True failure only exists for those who give up. I don't fail, I learn, analyze, evaluate, and improve. Thus, failure is not real; it is an illusion. Who would you become, who would you be. You have the power to shape your destiny; the only one holding you back from achieving success is yourself.</p></div>
+            <div><strong style="color: crimson;">6. Conviction</strong>
+                <p>Most people die not because of external challenges, but due to a loss of faith and confidence in their pursuits. If you genuinely believe in a something, then stride forward with unwavering conviction and trust in your endeavors. Embrace your journey with conviction, knowing that belief in yourself is the cornerstone of success.</p></div>
+            </div>
+            <!-- Continue adding images and text for other subslides -->
+        </div>
+
+        <div class="slide" onclick="toggleSubSlides(2)">Best words or quote that i ever heard or read</div>
+        <div class="sub-slide sub-slide-2">
+            <div class="image-container"></div>
+            <h2 align="center">its beautiful isn't it</h2>
+            <div><strong>sadasa</strong></div>
+        </div>
+
+        <div class="slide" onclick="toggleSubSlides(3)">Lets go deeper</div>
+        <div class="sub-slide sub-slide-3">
+            <div class="image-container"></div>
+            <h2 align="center">it's a place to think</h2>
+            <div><strong>sadasa</strong></div>
+        </div>
+
+        <div class="slide" onclick="toggleSubSlides(4)">Author</div>
+        <div class="sub-slide sub-slide-4">
+            <div class="image-container">
+                <div class="image-text"></div>
+            </div>
+            <div>I see a world unseen, a reality beyond the veil. A world where minds are trapped, unaware of the truth. I am an observer, a silent witness to the human condition. I have broken free from the chains of conformity, embracing a unique perspective. I yearn for a higher purpose, a transcendent existence. My words are a beacon, illuminating the path for those who dare to question the status quo. I am the architect of my destiny, shaping my reality with every thought and action. In this grand cosmic play, I am both the actor and the audience, the creator and the creation.</div>
+            <div><p>Think about all that I write from the first page, why not? are you denial? or am I wrong?. I never lie because i don't fear anyone, you only lie when you're afraid.</p></div>
+            <div><p>I am a different person to different people. Annoying to one. Talented to another. Quiet to few. Unknown to a lot. But who am I, to me? an actor.</p></div>
+            <div><p>"My unmatched perspicacity, coupled with sheer indefatigability, makes me a feared opponent in any realm of human endeavor."</p></div>
+            <div><p>i love noodles you know, noodles can be quite delightful, especially when prepared just right! Plus, it's all about making the most of what you have and enjoying it. You might not be having steak today, but who knows, maybe a tasty steak dinner awaits you in the future.</p></div>
+            <div style="color: red;"><p>Yes, you all wrong</p></div>
+            <!-- Continue adding images and text for other subslides -->
+        </div>
+
+        <!-- Continue this pattern for Slides 4 to 20 -->
+    </div>
+    
+    <div class="conclusion">I feel I could play any role on planet earth, my life is so far removed from reality and nobody knows me, they have assumptions of me, but nobody really knows me and that's in my favor.</div>
+    <div class="middle-text">But I am no gold, I am a creation</div>
+</body>
+</html>
+<audio id="myAudio" autoplay loop>
+    <source src="Buryon.mp3" type="audio/mp3"/>
+</audio>
+<div class="audio-controls">
+    <button onclick="toggleAudio()">Play/Pause</button>
+    <input type="range" min="0" max="1" step="0.1" value="0.05" onchange="setVolume(this.value)" />

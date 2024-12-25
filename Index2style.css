@@ -1,0 +1,115 @@
+body {
+    font-family: 'cambria', garamond;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* Dark gradient background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    color: #00ffcc; /* Neon teal color */
+}
+
+.slide {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 204, 0.5); /* Neon border */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.slide:hover {
+    background: rgba(0, 255, 204, 0.2);
+    transform: scale(1.02);
+}
+
+.sub-slide {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 204, 0.5);
+    border-radius: 10px;
+}
+
+.conclusion {
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    color: #e7e4d7; /* white color */
+}
+
+.middle-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #ffcc00; /* Gold color */
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 30%; /* Full width for images */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.image-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00ffcc; /* Neon teal color */
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for better visibility */
+}
+
+/* New styles for audio controls */
+.audio-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.audio-controls button {
+    background-color: #00ffcc;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.audio-controls button:hover {
+    background-color: #00cc99;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .slide, .sub-slide {
+        padding: 10px;
+    }
+    .image-text {
+        font-size: 1.5em;
+    }
+}
